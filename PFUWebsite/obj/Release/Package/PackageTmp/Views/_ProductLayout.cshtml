@@ -1,0 +1,1671 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Helpers
+@using Sitecore.Mvc.Presentation
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" class="en" data-qb-installed="true">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>fi Series Document Scanners - Ricoh Scanners</title>
+
+    <link href="~/css/products.css" rel="stylesheet" />
+</head>
+
+<body class="document-scanners ytapi">
+    <div id="main-container">
+        @Html.Sitecore().Placeholder("header")
+        <header class="primary-header sticky-top" aria-label="Page Header">
+            <div class="d-none d-lg-block utility-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="utility-nav">
+                                <nav aria-label="Utility" class="position-relative">
+                                    <ul>
+                                        <li class="nav-item dropdown utility-nav-link">
+                                            <a target=""
+                                               class="nav-link utility-nav-link"
+                                               style="cursor: pointer"
+                                               aria-controls="user-nav-6c783f3e-a1c5-493b-9cb7-cd072a8a5403"
+                                               aria-expanded="false">
+                                                Support
+                                                <span class="sr-only">Support</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item language-wrap utility-nav-link dropdown utility-nav-link">
+                                            <a class="nav-link utility-nav-link"
+                                               style="cursor: pointer"
+                                               aria-controls="region-picker"
+                                               aria-expanded="false">
+                                                <img src="~/images/icon_region-picker.png" />
+                                                English
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <button class="search-trigger"
+                                                    id="topnav-search-toggle">
+                                                <img src="~/images/icon-search.svg" alt="" />
+                                                <span class="sr-only">Toggle Search</span>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item utility-nav-login">
+                                            <a target=""
+                                               class="nav-link utility-nav-login"
+                                               style="cursor: pointer"
+                                               aria-controls="user-nav-cfce9462-cbbe-4c56-8bc3-62018270be5d"
+                                               aria-expanded="false">
+                                                <img src="~/images/icon-login.svg" alt="" />
+                                                <span class="sr-only">Login</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item utility-nav-cart">
+                                            <a target=""
+                                               class="nav-link utility-nav-cart"
+                                               style="cursor: pointer"
+                                               aria-controls="user-nav-f59565d9-319c-4385-b3a2-2814de8c121d"
+                                               aria-expanded="false">
+                                                <img src="~/images/icon-cart.svg" alt="" />
+                                                <span class="sr-only">Cart</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="d-none d-lg-block primary-navigation-desktop"
+                     aria-label="Navigation Bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 primary-nav-row">
+                            <nav id="primary-nav"
+                                 class="navbar primary-nav navbar-expand-lg"
+                                 aria-label="Primary">
+                                <div class="mobile-lock-up">
+                                    <a class="navbar-brand" style="cursor: pointer">
+                                        <img src="~/images/logo.svg" alt="scanners" />
+                                    </a>
+                                </div>
+                                <div class="collapse navbar-collapse nav-justify"
+                                     id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown active levels-2">
+                                            <a id="navbarDropdownMenuLink_22958275-9fd5-4958-a09d-2ab4064ad824"
+                                               target=""
+                                               class="nav-link dropdown-toggle active"
+                                               style="cursor: pointer"
+                                               title="Browse Document Scanners"
+                                               aria-haspopup="true"
+                                               aria-expanded="false">Document Scanners</a>
+                                        </li>
+                                        <li class="nav-item dropdown levels-2">
+                                            <a id="navbarDropdownMenuLink_a8d02870-8b28-42ae-a549-b34a40e3eb2c"
+                                               target=""
+                                               class="nav-link dropdown-toggle"
+                                               style="cursor: pointer"
+                                               title="Browse Solutions &amp; Services"
+                                               aria-haspopup="true"
+                                               aria-expanded="false">Solutions &amp; Services</a>
+                                        </li>
+                                        <li class="nav-item dropdown levels-3 popout">
+                                            <a class="nav-link dropdown-toggle"
+                                               style="cursor: pointer"
+                                               id="navbarDropdownMenuLink_2d73f0a8-922a-4735-b57f-d6c680b9cf5a"
+                                               target=""
+                                               title="Browse Office Productivity"
+                                               aria-haspopup="true"
+                                               aria-expanded="false">Office Productivity</a>
+                                        </li>
+                                        <li class="nav-item dropdown levels-1 popout">
+                                            <a class="nav-link dropdown-toggle"
+                                               style="cursor: pointer"
+                                               id="navbarDropdownMenuLink_8bfb8854-d514-4986-a88e-091b0948507e"
+                                               target=""
+                                               title="Browse Resources"
+                                               aria-haspopup="true"
+                                               aria-expanded="false">Resources</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-header" aria-label="Page Header">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-9">
+                            <nav aria-label="Breadcrumb" class="breadcrumb-wrapper">
+                                <ol class="breadcrumb" itemscope="">
+                                    <li class="breadcrumb-item"
+                                        style="cursor: pointer"
+                                        itemprop="itemListElement">
+                                        <a target="" itemprop="item"><span itemprop="name">Home</span></a>
+                                        <meta itemprop="position" content="1" />
+                                    </li>
+                                    <li class="breadcrumb-item"
+                                        style="cursor: pointer"
+                                        itemprop="itemListElement">
+                                        <a target="" itemprop="item"><span itemprop="name">Document Scanners</span></a>
+                                        <meta itemprop="position" content="2" />
+                                    </li>
+                                    <li class="breadcrumb-item" itemprop="itemListElement">
+                                        <span itemprop="name">fi Series</span>
+                                        <meta itemprop="position" content="3" />
+                                    </li>
+                                </ol>
+                            </nav>
+
+                            <strong class="page-title" title="fi Series">fi Series</strong>
+                        </div>
+                        <div class="col-3 page-nav"></div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        @Html.Sitecore().Placeholder("main")
+        <main role="main" id="mainContent">
+            <a id="top" class="anchor"></a>
+
+            <div class="">
+                <section class="promo-with-background-video orientation-left mb-0 theme-primary">
+                    <div class="content-wrapper">
+                        <div class="video-container vimeo">
+                            <iframe src="https://player.vimeo.com/video/904120943?h=d31ea19a70&iv_load_policy=3&autoplay=1&background=1&controls=0&loop=1&playlist=904120943"
+                                    frameborder="0"
+                                    allow="autoplay encrypted-media"></iframe>
+                        </div>
+
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="content-col col-lg-6">
+                                    <div class="content-container">
+                                        <div class="text">
+                                            <a name="realize-your-business-potential"
+                                               class="anchor"></a>
+                                            <h2 class="heading-1">
+                                                Realize your
+                                                <span style="white-space: nowrap">business potential</span>
+                                            </h2>
+                                            <div class="body">
+                                                <p>
+                                                    Efficient workflows. Scalable productivity. Instant
+                                                    collaboration. Ricoh Document Scanners’ fi Series
+                                                    enables all of that and more.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-container">
+                                            <a class="btn" disabledescription="True">
+                                                Browse fi Series Scanners
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="subhead-content-block compact alignment-center mb-0 theme-primary">
+                <a name="saving-you-time-money-every-step-of-the-way"
+                   class="anchor"></a>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-9">
+                            <a name="saving-you-time-money-every-step-of-the-way"
+                               class="anchor"></a>
+                            <h2>Saving you time &amp; money every step of the way</h2>
+                            <p>
+                                Whether scanning customer documents, optimizing a business
+                                process, or running an archival production service, Ricoh
+                                Document Scanners’ fi Series delivers industry-leading
+                                durability and reliability. Our scanners can help
+                                organizations save thousands of dollars in labor and hardware
+                                costs.
+                            </p>
+                            <p class="pb-4">
+                                <a class="btn btn-primary">See the Savings</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="digitized-image-promo orientation-left">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 content-container">
+                            <a name="reduce-labor-costs-optimize-workflows"
+                               class="anchor"></a>
+                            <h2>Reduce labor costs &amp;<br />optimize workflows</h2>
+                            <div>
+                                <ul class="themed-bullet bullet-square">
+                                    <li>
+                                        Provides the fastest scan times from machine start-up to
+                                        image capture, review, and data saving
+                                    </li>
+                                    <li>
+                                        Eliminates the need (and time) to switch settings for
+                                        passports, cards, and more
+                                    </li>
+                                    <li>
+                                        Automatically rotates skewed documents and previews
+                                        thumbnail images
+                                    </li>
+                                    <li>
+                                        Enables increased productivity due to fewer paper jams
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <figure>
+                                <img src="~/images/Ricoh_FiSeriesHomepage_500x400_8170wComputer.jpg"
+                                     class="img-fluid"
+                                     alt=""
+                                     width="500"
+                                     height="400" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="digitized-image-promo orientation-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 content-container">
+                            <a name="lower-long-term-hardware-it-needs" class="anchor"></a>
+                            <h2>Lower long-term hardware<br />&amp; IT needs</h2>
+                            <div>
+                                <ul class="themed-bullet bullet-square">
+                                    <li>
+                                        Helps cut long-term hardware costs with built-to-last
+                                        scanners made with the highest-quality materials
+                                    </li>
+                                    <li>
+                                        Streamlines IT resources with simple scanning solutions,
+                                        easy installation, and an intuitive user interface
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <figure>
+                                <img src="~/images/Ricoh_FiSeriesHomepage_500x400_8950_medical.jpg"
+                                     class="img-fluid"
+                                     alt=""
+                                     width="500"
+                                     height="400" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cta-blade pb-0 theme-primary"
+                     style="background-color: transparent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="cta-container">
+                                <a disabledescription="True"
+                                   title="Contact a Solutions Expert"
+                                   class="btn btn-primary">Contact a Solution Expert</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subhead-content-block compact alignment-center background-color-off-white mb-0 pb-0">
+                <a name="each-fi-series-scanner-comes-equipped-with-our-powerful-paperstream-technology"
+                   class="anchor"></a>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-9">
+                            <a name="each-fi-series-scanner-comes-equipped-with-our-powerful-paperstream-technology"
+                               class="anchor"></a>
+                            <h2>
+                                Each fi Series scanner comes equipped with our powerful
+                                PaperStream technology
+                            </h2>
+                            <p>
+                                Our industry-leading technology and capabilities help digitize
+                                paper-based data and make it instantly organized, accessible,
+                                and actionable for your business—helping with reducing costs
+                                and automating tasks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="themed-container enable-flex background-color-off-white mb-0">
+                <section class="promo-text-and-image staggered layout-half orientation-right pb-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="text-col">
+                                <div class="content-container">
+                                    <div class="text">
+                                        <a name="scans-that-look-better-than-the-originals"
+                                           class="anchor"></a>
+                                        <h2 class="heading-1">
+                                            Scans that look better than the originals
+                                        </h2>
+                                        <div class="body">
+                                            <p>
+                                                Automatically improve and optimize your image quality.
+                                                PaperStream ensures that every scan is accurate and
+                                                usable from the first scan, preventing data loss,
+                                                rotating skewed documents, removing stains or
+                                                watermarks, and more.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="cta-container">
+                                        <a class="btn-text"
+                                           disabledescription="True"
+                                           style="
+                          text-decoration: none;
+                          font-weight: bold;
+                          color: #cf112d;
+                          cursor: pointer;
+                        ">
+                                            Learn more about fi Series’<br />industry-leading
+                                            PaperStream IP
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-col">
+                                <div class="img-container">
+                                    <img src="~/images/paperstream-image-cleanup.gif"
+                                         class="img-fluid"
+                                         alt="PaperStream image cleanup animated graphic"
+                                         width="576"
+                                         height="324" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="promo-text-and-image staggered layout-half orientation-left pb-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="text-col">
+                                <div class="content-container">
+                                    <div class="text">
+                                        <a name="say-goodbye-to-manual-processes-that-waste-time"
+                                           class="anchor"></a>
+                                        <h2 class="heading-1">
+                                            Say goodbye to manual processes that waste time
+                                        </h2>
+                                        <div class="body">
+                                            <p>
+                                                Boost your scanning performance when you pair
+                                                PaperStream Capture Pro with Ricoh scanners. Automate
+                                                data entry, empower batch scanning of forms, and make
+                                                quality control quicker.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="cta-container">
+                                        <a class="btn-text"
+                                           disabledescription="True"
+                                           style="
+                          text-decoration: none;
+                          font-weight: bold;
+                          color: #cf112d;
+                          cursor: pointer;
+                        ">Learn more about PaperStream’s<br />Capture Pro</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-col">
+                                <div class="img-container">
+                                    <img src="~/images/pscp_gen_gif.gif"
+                                         class="img-fluid"
+                                         alt=""
+                                         width="739"
+                                         height="415" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="promo-text-and-image staggered layout-half orientation-right pb-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="text-col">
+                                <div class="content-container">
+                                    <div class="text">
+                                        <a name="complete-ad-hoc-scanning-jobs-at-the-touch-of-a-button"
+                                           class="anchor"></a>
+                                        <h2 class="heading-1">
+                                            Complete ad hoc scanning jobs at the touch of a button
+                                        </h2>
+                                        <div class="body">
+                                            <p>
+                                                Scan, select, and save your documents in three easy
+                                                steps. PaperStream ClickScan allows one-button
+                                                scanning and preset profiles for the people and job
+                                                functions most frequently completed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="cta-container">
+                                        <a class="btn-text"
+                                           disabledescription="True"
+                                           style="
+                          text-decoration: none;
+                          font-weight: bold;
+                          color: #cf112d;
+                          cursor: pointer;
+                        ">
+                                            Learn more about PaperStream’s<br />click-to-scan
+                                            technology
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-col">
+                                <div class="img-container">
+                                    <img src="~/images/paperstream-3-step-process.gif"
+                                         class="img-fluid"
+                                         alt="PaperStream 3 step process animated graphic"
+                                         width="576"
+                                         height="324" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="featured-hero pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="content-container">
+                                <a name="deliver-crucial-data-to-the-right-places-and-people"
+                                   class="anchor"></a>
+                                <h1>Deliver crucial data to the right places and people</h1>
+                                <div class="body-copy">
+                                    <p>
+                                        PaperStream’s simple, powerful user interface includes
+                                        predefined profiles so scanner<br class="d-none d-lg-block" />
+                                        operators can quickly scan, name files, and disperse
+                                        scanned documents to:
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 768px)"
+                                srcset="
+                  /-/media/project/scanners/promos/fi-series/deliver-crucial-data-mobile.png?h=1573&amp;w=823&amp;hash=6781C71CC155B4E9B86AEF59E12A2F36
+                " />
+                        <img src="~/images/deliver-crucial-data-desktop.png"
+                             class="img-fluid"
+                             alt="" />
+                    </picture>
+                </div>
+            </section>
+
+            <section class="card-deck standard arrow-cta items-per-row-3 mb-0 pb-0"
+                     data-show-more="3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a name="data-management-solutions-for-any-workplaceenvironment-even-across-multiple-locations"
+                               class="anchor"></a>
+                            <div class="deck-header">
+                                <div class="deck-header-body">
+                                    <h2 class="">
+                                        <span class="color-red">
+                                            Data management solutions for any workplace<br />environment,
+                                            even across multiple locations<span> </span>
+                                        </span>
+                                    </h2>
+                                    <p>
+                                        Centralize business operations with cloud-based solutions
+                                        to save your organization time and money.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center main-content">
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{5d667fa6-a951-4558-b4b9-6c6f3f70aa6e}"
+                             data-datasource-id="{1F5DD096-26A0-4C28-A2F4-0C20E5BC610D}">
+                            <div class="card with-link">
+                                <a target=""
+                                   title="Track scanner performance from one location"
+                                   aria-label="Track scanner performance from one location">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/scanner-central-admin.jpg"
+                                                 class="img-fluid"
+                                                 alt="Admin for data management"
+                                                 width="944"
+                                                 height="720" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">
+                                                Track scanner performance from one location
+                                            </h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    Manage a fleet of scanners and software updates from
+                                                    one location through this convenient and cost-saving
+                                                    administrative application.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta" style="cursor: pointer" target="">
+                                                Learn more about our Scanner Central Admin server
+                                                application
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{6e9d5ae7-e34d-434c-9790-78d9fdb03861}"
+                             data-datasource-id="{AAD15F90-0ACC-40AC-8975-9E5C1AE9F47C}">
+                            <div class="card with-link">
+                                <a target=""
+                                   title="Remote distributed scanning capabilities"
+                                   aria-label="Remote distributed scanning capabilities">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/remote-distributed-scanning.jpg"
+                                                 class="img-fluid"
+                                                 alt="Woman using scanner with remote distributed scanning"
+                                                 width="944"
+                                                 height="720" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">
+                                                Remote distributed scanning capabilities
+                                            </h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    For organizations with multiple locations, send
+                                                    documents to a private or public cloud to share
+                                                    across the enterprise and manage from one location.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta" style="cursor: pointer" target="">
+                                                Learn more about our solutions for Remote Distributed
+                                                Scanning
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="digitized-image-promo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 content-container">
+                            <a name="bli-scanner-line-of-the-year-award" class="anchor"></a>
+                            <h2>BLI Scanner Line of the Year Award</h2>
+                            <div>
+                                <p>
+                                    "Scanners from Ricoh are a great choice for businesses as
+                                    they enable excellence in areas such as hybrid work without
+                                    compromising on staples like image quality."<br />
+                                    -Mark Davis, Analyst in Keypoint Intelligence's Workplace
+                                    Group
+                                </p>
+                            </div>
+
+                            <a disabledescription="True"
+                               rel="noopener noreferrer"
+                               class="btn btn-primary"
+                               target="_blank">Learn More</a>
+                        </div>
+                        <div class="col-md-7">
+                            <figure>
+                                <img src="~/images/BLI_Award_Ricoh_2024_ LOY US_Seal.jpg"
+                                     class="img-fluid"
+                                     alt="BLI LIne of the Year Award logo"
+                                     width="1152"
+                                     height="926" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card-deck background-color-off-white no-frame arrow-cta items-per-row-4 orientation-left mb-0"
+                     data-show-more="3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a name="explore-our-scanning-solutions" class="anchor"></a>
+                            <div class="deck-header">
+                                <div class="deck-header-body">
+                                    <h2 class="">
+                                        <span class="color-red">Explore our scanning solutions</span>
+                                    </h2>
+                                    <p class="text-left-80">
+                                        From desktop operations to high-volume production needs,
+                                        our document scanners combine the highest build quality
+                                        with innovative technology for a game-changing
+                                        digitization experience.
+                                    </p>
+                                </div>
+                                <div class="deck-cta-wrapper">
+                                    <a>View All fi Series Scanners</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center main-content">
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{b04dd2c3-4406-4cd3-bd54-6198996885cb}"
+                             data-datasource-id="{F0735540-FF2E-4CC3-BEEF-E0F3C07304D3}">
+                            <div class="card with-link">
+                                <a target=""
+                                   title="Light Workflow Solutions"
+                                   aria-label="Light Workflow Solutions">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/71-Light_Workflow_Solutions.png"
+                                                 class="img-fluid"
+                                                 alt="Light Workflow Solutions - RICOH fi-8040 document scanner"
+                                                 width="1152"
+                                                 height="936" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Light Workflow Solutions</h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    Efficient and reliable scanners with TWAIN &amp;
+                                                    ISIS drivers that are both affordable and compact.
+                                                    Perfect for smaller operations with low-volume
+                                                    scanning needs.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  style="cursor: pointer"
+                                                  href="/scanners/all?family=fi-series&amp;family=sp-series&amp;tag=entry-level"
+                                                  target="">Browse Scanners</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{832006df-20f7-4d6e-9d13-a31e469033b6}"
+                             data-datasource-id="{9A5911A2-EDBC-46D7-A046-FCF94C75C55F}">
+                            <div class="card with-link">
+                                <a target=""
+                                   title="Desktop Solutions"
+                                   aria-label="Desktop Solutions">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/72_Desktop_Solutions.png"
+                                                 class="img-fluid"
+                                                 alt="Desktop Solutions - RICOH fi-8170 Document Scanner"
+                                                 width="1152"
+                                                 height="936" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Desktop Solutions</h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    These hardworking scanners take up little space
+                                                    while taking on demanding workflows. Compatible with
+                                                    hundreds of software solutions, certain models also
+                                                    offer scanning capabilities via centrally managed
+                                                    servers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  style="cursor: pointer"
+                                                  href="/scanners/all?family=fi-series&amp;family=sp-series&amp;tag=desktop"
+                                                  target="">Browse Scanners</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{654b5087-299b-4015-a337-9cd161d627dd}"
+                             data-datasource-id="{1C19CB2C-D696-4AD0-9761-CFEB568EA24A}">
+                            <div class="card with-link">
+                                <a target=""
+                                   title="Production Solutions"
+                                   aria-label="Production Solutions">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/73-ProductionSolutions-fi-8950.png"
+                                                 class="img-fluid"
+                                                 alt=""
+                                                 width="1152"
+                                                 height="936" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Production Solutions</h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    Able to scan up to 150 pages per minute and with
+                                                    hoppers holding up to 750 pages, our scanners'
+                                                    durability, speed, and exceptional paper handling
+                                                    are exceeded only by their OCR and powerful image
+                                                    enhancement.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  style="cursor: pointer"
+                                                  href="/scanners/all?family=fi-series&amp;family=sp-series&amp;tag=production"
+                                                  target="">Browse Scanners</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{fc795832-66b3-4c95-8228-9ad16375d111}"
+                             data-datasource-id="{9C0E9006-1EAA-45CE-B39C-7D2F9F6DA2CC}">
+                            <div class="card with-link">
+                                <a target=""
+                                   title="Network Solutions"
+                                   aria-label="Network Solutions">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/74 _Network-Solutions.png"
+                                                 class="img-fluid"
+                                                 alt="Network Solutions - RICOH fi-7300NX Document Scanner"
+                                                 width="1152"
+                                                 height="936" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Network Solutions</h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    Allows multiple users to scan to unique
+                                                    destinations–in your network or on the
+                                                    cloud–securely and easily to streamline
+                                                    collaboration and IT resourcing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  style="cursor: pointer"
+                                                  href="/scanners/all?family=fi-series&amp;family=sp-series&amp;tag=network"
+                                                  target="">Browse Scanners</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gradient-promo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content-container">
+                                <a name="book-a-free-assessment" class="anchor"></a>
+                                <h2>Book a Free Assessment</h2>
+                                <p>
+                                    The path to cost-saving digital transformation begins with
+                                    industry-leading document scanners. Let us show you how.
+                                </p>
+                                <a class="btn btn-primary" disabledescription="True">Get Expert Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card-deck background-color-white no-frame arrow-cta items-per-row-2 orientation-left mb-0 pb-0 theme-primary"
+                     data-show-more="3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a name="ricoh-document-scanners-solve-imagingchallenges-across-every-industry"
+                               class="anchor"></a>
+                            <div class="deck-header">
+                                <div class="deck-header-body">
+                                    <h2 class="">
+                                        <span class="color-red">
+                                            Ricoh Document Scanners solve imaging<br />challenges
+                                            across every industry<span> </span>
+                                        </span>
+                                    </h2>
+                                    Explore the following case studies and
+                                    <a class="text-link">other industries</a>&nbsp;to see our
+                                    solutions in action.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center main-content">
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{3524760a-28ac-47bb-a021-a3151bf9957c}"
+                             data-datasource-id="{68CE3AC2-35D4-40DF-B6BB-EB9C7E993D97}">
+                            <div class="card with-link">
+                                <a target="" title="Healthcare" aria-label="Healthcare">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/healthcare_card.jpg"
+                                                 class="img-fluid"
+                                                 alt=""
+                                                 width="1152"
+                                                 height="576" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Healthcare</h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    Sharp Healthcare standardized their scanning
+                                                    infrastructure to help capture, protect, and store
+                                                    patient data.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  href="/industries/healthcare"
+                                                  target="">Explore this story and more</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{40db9ee3-4d25-416a-8869-0d9061895020}"
+                             data-datasource-id="{8CC73E33-6BC1-4D27-9543-28522E377C70}">
+                            <div class="card with-link">
+                                <a target="" title="Government" aria-label="Government">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/government_card.jpg"
+                                                 class="img-fluid"
+                                                 alt=""
+                                                 width="1152"
+                                                 height="576" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Government</h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    The city offices of Dunedin, Florida reduced storage
+                                                    costs and operational hazards caused by overwhelming
+                                                    amounts of paperwork by digitizing their records.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  href="/industries/government"
+                                                  target="">Explore this story and more</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{6f11249b-662f-481e-aabb-bf079807f7a7}"
+                             data-datasource-id="{47FA2084-7CF0-480E-BE6A-113DD326DF33}">
+                            <div class="card with-link">
+                                <a target="" title="Education" aria-label="Education">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/education_card.jpg"
+                                                 class="img-fluid"
+                                                 alt=""
+                                                 width="1152"
+                                                 height="576" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Education</h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    Amarillo Independent School District digitized one
+                                                    hundred years’ worth of paper records, saving
+                                                    retrieval time and precious space.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  href="/industries/education"
+                                                  target="">Explore this story and more</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-col promo-card"
+                             data-item-id="{49E637E0-9164-4199-98B3-FCD3669BA72F}"
+                             data-rendering-id="{f33a7887-bec8-45cb-be66-e516b145ae53}"
+                             data-datasource-id="{FC0AD671-CB89-47D6-A232-BCAB64D207A5}">
+                            <div class="card with-link">
+                                <a target=""
+                                   title="Financial Services"
+                                   aria-label="Financial Services">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/financial-services_card.jpg"
+                                                 class="img-fluid"
+                                                 alt=""
+                                                 width="1152"
+                                                 height="576" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Financial Services</h3>
+                                            <div class="card-text">
+                                                <p>
+                                                    Tradition Capital Bank created a secure and
+                                                    efficient way to share and retrieve sensitive
+                                                    customer information by scanning documents to the
+                                                    corporate network.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  href="/industries/financial-services"
+                                                  target="">Explore this story and more</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="digitized-image-promo background-color-off-white mb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 content-container">
+                            <a name="its-a-great-time-to-upgrade" class="anchor"></a>
+                            <h2>
+                                <span class="digitized-header-alt">It’s a great time to upgrade!</span>
+                            </h2>
+                            <div>
+                                <p>
+                                    Looking to trade in your current scanning solution? Trade in
+                                    select fi Series scanners for a rebate that can be applied
+                                    to a new model.
+                                </p>
+                                <p class="disclaimer-text">Terms and conditions may apply.</p>
+                            </div>
+
+                            <a class="btn btn-primary" disabledescription="True">Learn More</a><a disabledescription="True"
+                                                                                                  title="Contact Us"
+                                                                                                  class="btn-text"
+                                                                                                  style="
+                    text-decoration: none;
+                    margin-left: 20px;
+                    font-weight: bold;
+                    color: #cf112d;
+                  ">Contact us for more information</a>
+                        </div>
+                        <div class="col-md-7">
+                            <figure>
+                                <img src="~/images/upgrade-promo.jpg"
+                                     class="img-fluid"
+                                     alt="Arrows graphic"
+                                     width="1200"
+                                     height="836" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gradient-promo mb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content-container">
+                                <a name="want-to-chat-with-one-of-our-industry-experts"
+                                   class="anchor"></a>
+                                <h2>Want to chat with one of our industry experts?</h2>
+                                <p>
+                                    Get in touch with a Solutions Expert to find out which fi
+                                    Series solution is right for you.
+                                </p>
+                                <a disabledescription="True"
+                                   title="Contact Us"
+                                   class="btn btn-primary">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card-deck background-color-off-white resources-card arrow-cta items-per-row-3 orientation-left mb-0 pb-0 theme-primary"
+                     data-show-more="3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a name="discover-the-latest" class="anchor"></a>
+                            <div class="deck-header">
+                                <div class="deck-header-body">
+                                    <h2 class="">Discover the latest</h2>
+                                    <h3 class="">
+                                        Blogs, customer stories, upcoming events, videos, and
+                                        more.
+                                    </h3>
+                                </div>
+                                <div class="deck-cta-wrapper">
+                                    <a class="btn btn-primary">See More of the Latest</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center main-content">
+                        <div class="card-col">
+                            <div class="card with-link">
+                                <a aria-label="Learn More About A buyer’s guide to FADGI-capable scanners "
+                                   title="Learn More About A buyer’s guide to FADGI-capable scanners ">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img class="img-fluid"
+                                                 src="~/images/FADGI_blog.jpg"
+                                                 alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Blog</h3>
+                                            <h4>A buyer’s guide to FADGI-capable scanners</h4>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  href="/blog/a-buyers-guide-to-fadgi-capable-scanners">
+                                                Learn More
+                                                <span class="sr-only">
+                                                    about A buyer’s guide to FADGI-capable scanners
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-col video-card trigger-video-modal"
+                             data-video-id="wyyplCN0mRk"
+                             data-video-start="0"
+                             data-video-host="youtube"
+                             data-toggle="modal"
+                             data-target="#videoModal"
+                             id="videoModalTrigger-wyyplCN0mRk"
+                             role="button"
+                             title="Play Video: Document AI &amp; Intelligent Document Processing with Ricoh&#39;s Industry-Leading Technology"
+                             aria-label="Play Video: Document AI &amp; Intelligent Document Processing with Ricoh&#39;s Industry-Leading Technology"
+                             tabindex="0">
+                            <div class="card with-link">
+                                <div class="card-img-top">
+                                    <div class="img-container">
+                                        <span class="video-container">
+                                            <img src="~/images/ai_thumb.png"
+                                                 alt=""
+                                                 class="img-fluid" />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <h3 class="card-title">Video</h3>
+                                        <h4>
+                                            Document AI &amp; Intelligent Document Processing with
+                                            Ricoh's Industry-Leading Technology
+                                        </h4>
+                                    </div>
+                                    <div class="cta-wrapper">
+                                        <span class="card-cta">
+                                            Play Video<span class="sr-only">
+                                                : Document AI &amp; Intelligent Document Processing
+                                                with Ricoh's Industry-Leading Technology
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-col">
+                            <div class="card with-link">
+                                <a title="Learn More About Customer Story"
+                                   aria-label="Learn More About Customer Story">
+                                    <div class="card-img-top">
+                                        <div class="img-container">
+                                            <img src="~/images/customer_story_amarillo_01.jpg"
+                                                 alt=""
+                                                 class="img-fluid" />
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <h3 class="card-title">Customer Story</h3>
+                                            <h4>
+                                                A retail franchise chain eliminates paper storage fees
+                                                and brings scanning to the front desk
+                                            </h4>
+                                        </div>
+                                        <div class="cta-wrapper">
+                                            <span class="card-cta"
+                                                  href="/resources/customer-stories/amarillo-isd">
+                                                Learn More
+                                                <span class="sr-only">
+                                                    about A retail franchise chain eliminates paper
+                                                    storage fees and brings scanning to the front
+                                                    desk
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @Html.Sitecore().Placeholder("footer")
+        <footer class="primary-footer">
+            <div class="footer-wrapper bg-dark-gray">
+                <div class="container">
+                    <div class="row main-wrap">
+                        <nav class="footer-primary" aria-label="Footer Main">
+                            <ul class="nav">
+                                <li class="navigation-column">
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse Document Scanners">Document Scanners</a>
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse ScanSnap">ScanSnap</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse fi Series">fi Series</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Software">Software</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Service Programs">Service Programs</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Refurbished Scanners">Refurbished Scanners</a>
+                                        </li>
+                                    </ul>
+
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse Printers">Printers</a>
+
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse Projectors">Projectors</a>
+
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse Portable Monitors">Portable Monitors</a>
+
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse Meeting 360">Meeting 360</a>
+
+                                    <a class="nav-link"
+                                       target="_blank"
+                                       href=""
+                                       title="Browse Keyboards">Keyboards</a>
+                                </li>
+                                <li class="navigation-column">
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse Partners">Partners</a>
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse OCA Partner Program">OCA Partner Program</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Partner Listing">Partner Listing</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target="_blank"
+                                               href=""
+                                               title="Browse Partner Portal">Partner Portal</a>
+                                        </li>
+                                    </ul>
+
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse Industries">Industries</a>
+                                </li>
+                                <li class="navigation-column">
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse Resources">Resources</a>
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Blog">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Customer Stories">Customer Stories</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Events">Events</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Guides">Guides</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Industry Briefs">Industry Briefs</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Videos">Videos</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Scanner Programs">Scanner Programs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navigation-column">
+                                    <a class="nav-link"
+                                       target=""
+                                       href=""
+                                       title="Browse About Us">About Us</a>
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Leadership">Leadership</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Careers">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Press Releases">Press Releases</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse News">News</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Environment">Environment</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Contact Us">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navigation-column">
+                                    <a class="nav-link" target="" href="" title="Browse Support">Support</a>
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Warranties, Manuals &amp;amp; Datasheets">Warranties, Manuals &amp; Datasheets</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Drivers &amp;amp; Downloads">Drivers &amp; Downloads</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Consumables">Consumables</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target="_blank"
+                                               href=""
+                                               title="Browse Product Registration">Product Registration</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target="_blank"
+                                               href=""
+                                               title="Browse Knowledge Base">Knowledge Base</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse EdgeXperience Capture Service">EdgeXperience Capture Service</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Discontinued Scanners">Discontinued Scanners</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Store FAQ">Store FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse Grey Market Caution">Grey Market Caution</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="sidebar-wrap">
+                            <div class="footer-contact">
+                                <nav aria-label="Footer Contact">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse +1 800.626.4686">+1 800.626.4686</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link"
+                                               target=""
+                                               href=""
+                                               title="Browse How To Buy">How To Buy</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <nav class="footer-social" aria-label="Footer Social">
+                                <h3>Stay Connected</h3>
+                                <ul class="nav nav-social-row">
+                                    <li class="nav-item">
+                                        <h4>Ricoh Document Scanners</h4>
+                                        <ul class="nav nav-social">
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target="_blank"
+                                                   href=""
+                                                   title="Browse LinkedIn">
+                                                    <span class="icon icon-linkedin">
+                                                        <span class="sr-only">LinkedIn</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target="_blank"
+                                                   href=""
+                                                   title="Browse Facebook">
+                                                    <span class="icon icon-facebook">
+                                                        <span class="sr-only">Facebook</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target="_blank"
+                                                   href=""
+                                                   title="Browse YouTube">
+                                                    <span class="icon icon-youtube">
+                                                        <span class="sr-only">YouTube</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <h4>ScanSnap</h4>
+                                        <ul class="nav nav-social">
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target="_blank"
+                                                   href=""
+                                                   title="Browse LinkedIn">
+                                                    <span class="icon icon-linkedin">
+                                                        <span class="sr-only">LinkedIn</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target="_blank"
+                                                   href=""
+                                                   title="Browse Facebook">
+                                                    <span class="icon icon-facebook">
+                                                        <span class="sr-only">Facebook</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target="_blank"
+                                                   href=""
+                                                   title="Browse Instagram">
+                                                    <span class="icon icon-instagram">
+                                                        <span class="sr-only">Instagram</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target="_blank"
+                                                   href=""
+                                                   title="Browse YouTube">
+                                                    <span class="icon icon-youtube">
+                                                        <span class="sr-only">YouTube</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <h4>Ricoh Productivity Solutions</h4>
+                                        <ul class="nav nav-social">
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target="_blank"
+                                                   href=""
+                                                   title="Browse LinkedIn">
+                                                    <span class="icon icon-linkedin">
+                                                        <span class="sr-only">LinkedIn</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <nav class="footer-legal d-flex" aria-label="Footer Legal">
+                                <small>
+                                    <div class="legal-content">
+                                        <img src="~/images/pfu-logo-white.svg"
+                                             class="legal-logo"
+                                             alt="PFU - A Ricoh Company logo" />
+                                        <div class="body-xs-medium">
+                                            <span>
+                                                ©2025 PFU America, Inc. All rights reserved. | RICOH
+                                                and the RICOH logo are registered trademarks of Ricoh
+                                                Company, Ltd.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="legal-nav-container">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target=""
+                                                   href=""
+                                                   title="Browse Accessibility">Accessibility</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target=""
+                                                   href=""
+                                                   title="Browse Terms of Use">Terms of Use</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target=""
+                                                   href=""
+                                                   title="Browse Privacy">Privacy</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target=""
+                                                   href=""
+                                                   title="Browse Cookie Preferences">Cookie Preferences</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   target=""
+                                                   href=""
+                                                   title="Browse Do Not Sell or Share My Personal Information">Do Not Sell or Share My Personal Information</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </small>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
